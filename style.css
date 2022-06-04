@@ -1,0 +1,107 @@
+/* Variables and resets */
+
+:root {
+    --lightblue: #4085e6;
+    --darkblue: #1F2937;
+    --lightgray: rgb(214, 214, 214);
+    --gray: #333;
+}
+
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Navbar */
+
+.navbar {
+    background-color: var(--darkblue);
+    height: 56px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+}
+
+.nav-info {
+    height: 56px;
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navlinks {
+    display: flex;
+    gap: 24px;
+    font-size: 14px;
+    color: var(--lightgray);
+}
+
+.navlinks li a {
+    text-decoration: none;
+    color: var(--lightgray);
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+}
+
+/* Main banner */
+
+.banner {
+    color: white;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom right, #1F2937, #49586d)
+}
+
+.banner-main {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-info {
+    width: 380px;
+}
+
+.banner-info h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+.banner-info p {
+    color: var(--lightgray);
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+.banner-info button {
+    padding: 8px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: var(--lightblue);
+    border-radius: 10px;
+    border: none;
+    color: white;
+}
+
+.banner img {
+    width: 290px;
+    height: 220px;
+}
+
+/* Information Cards */
+
+.info-cards {
+    height: 100vh;
+}
