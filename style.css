@@ -13,6 +13,11 @@
     padding: 0;
     list-style: none;
 }
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 32px 0;
+}
 
 /* Navbar */
 
@@ -96,12 +101,83 @@
 }
 
 .banner img {
-    width: 290px;
-    height: 220px;
+    width: 360px;
+    height: auto;
 }
 
 /* Information Cards */
 
+.info-section {
+    display: flex;
+    justify-content: center;
+}
+
 .info-cards {
-    height: 100vh;
+    text-align: center;
+    width: 800px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards figure {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.image-card {
+    border: 3px solid var(--darkblue);
+    width: 200px;
+    height: 200px;
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cards figure p {
+    font-size: 14px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+.image-card.frida {
+    background-image: url(images/WhatsApp\ Image\ 2022-05-18\ at\ 12.57.31.jpeg);
+    background-size: auto 200px;
+}
+.image-card.maizena {
+    background-image: url(images/WhatsApp\ Image\ 2022-05-08\ at\ 12.17.56.jpeg);
+    background-size: auto 200px;
+}
+.image-card.tomilho {
+    background-image: url(images/WhatsApp\ Image\ 2022-04-06\ at\ 06.01.30.jpeg);
+    background-size: 200px auto;
+}
+
+/* Inspirational Quote section */
+
+.quote {
+    background-color: var(--lightgray);
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote div {
+    width: 800px;
+}
+
+.quote div p {
+    font-size: 22px;
+    font-style: italic;
+    text-align: justify;
+    margin-bottom: 16px;
+}
+.quote div h6 {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: right;
 }
