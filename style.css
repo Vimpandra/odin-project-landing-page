@@ -1,4 +1,4 @@
-/* Variables and resets */
+/* Variables, resets and universal */
 
 :root {
     --lightblue: #4085e6;
@@ -13,10 +13,11 @@
     padding: 0;
     list-style: none;
 }
-h2 {
-    font-size: 28px;
-    font-weight: bold;
-    margin: 32px 0;
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
 }
 
 /* Navbar */
@@ -91,13 +92,13 @@ h2 {
     margin-bottom: 16px;
 }
 .banner-info button {
-    padding: 8px 24px;
-    font-size: 16px;
-    font-weight: bold;
-    background-color: var(--lightblue);
-    border-radius: 10px;
-    border: none;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 8px;
     color: white;
+    padding: 8px 24px;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .banner img {
@@ -110,6 +111,12 @@ h2 {
 .info-section {
     display: flex;
     justify-content: center;
+}
+
+.info-cards h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 32px;
 }
 
 .info-cards {
@@ -180,4 +187,55 @@ h2 {
     font-size: 14px;
     font-weight: bold;
     text-align: right;
+}
+
+/* Call to Action section */
+
+.call-to-action {
+    background-color: var(--lightblue);
+    width: 800px;
+    align-self: center;
+    border-radius: 16px;
+    color: white;
+}
+
+.action-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px;
+}
+
+.action-box div h3 {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.action-box div p {
+    font-size: 14px;
+}
+
+.action-box button {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 8px;
+    color: white;
+    padding: 8px 24px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--darkblue);
+    color: white;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    font-size: 12px;
 }
