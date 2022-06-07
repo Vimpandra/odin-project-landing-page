@@ -79,6 +79,7 @@ body {
 
 .banner-info {
     width: 380px;
+    text-align: justify;
 }
 
 .banner-info h1 {
@@ -89,9 +90,9 @@ body {
 .banner-info p {
     color: var(--lightgray);
     font-size: 16px;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
 }
-.banner-info button {
+.banner-info .button {
     background-color: transparent;
     border: 2px solid white;
     border-radius: 8px;
@@ -99,6 +100,7 @@ body {
     padding: 8px 24px;
     font-size: 14px;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .banner img {
@@ -116,7 +118,8 @@ body {
 .info-cards h2 {
     font-size: 28px;
     font-weight: bold;
-    margin-bottom: 32px;
+    margin-bottom: 64px;
+    color: var(--darkblue);
 }
 
 .info-cards {
@@ -148,6 +151,8 @@ body {
     font-size: 14px;
     margin-top: 16px;
     margin-bottom: 32px;
+    text-align: justify;
+    line-height:18px;
 }
 
 .image-card.frida {
@@ -182,11 +187,13 @@ body {
     font-style: italic;
     text-align: justify;
     margin-bottom: 16px;
+    color: var(--darkblue);
 }
 .quote div h6 {
     font-size: 14px;
     font-weight: bold;
     text-align: right;
+    color: var(--darkblue);
 }
 
 /* Call to Action section */
@@ -207,22 +214,24 @@ body {
 
 .action-box div h3 {
     font-weight: bold;
-    font-size: 18px;
-    margin-bottom: 8px;
+    font-size: 24px;
+    margin-bottom: 4px;
 }
 
 .action-box div p {
     font-size: 14px;
 }
 
-.action-box button {
+.action-box .button {
     background-color: transparent;
     border: 2px solid white;
     border-radius: 8px;
     color: white;
-    padding: 8px 24px;
+    padding: 12px 24px;
     font-size: 14px;
     font-weight: bold;
+    text-decoration: none;
+    align-self: center;
 }
 
 /* Footer */
@@ -232,10 +241,31 @@ footer {
     color: white;
     height: 56px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 4px;
 }
 
 footer p {
     font-size: 12px;
+}
+
+/* Animations and interactivity */
+
+.action-box .button:hover {
+    background-color: white;
+    color: var(--lightblue);
+    transition: ease-in-out 200ms;
+}
+
+.banner-info .button:hover {
+    background-color: white;
+    color: var(--darkblue);
+    transition: ease-in-out 200ms;
+}
+
+.navlinks li a:hover {
+    color: white;
+    transition: ease-in-out 200ms;
 }
